@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
-import { LeftColumnComponent } from './left-column/left-column.component';
+// import { LeftColumnComponent } from './left-column/left-column.component';
+import { LeftColumnModule } from './left-column/left-column.module';
 import { MiddleColumnComponent } from './middle-column/middle-column.component';
 import { RightColumnComponent } from './right-column/right-column.component';
 
@@ -11,14 +12,12 @@ import { RightColumnComponent } from './right-column/right-column.component';
   declarations: [
     AppComponent,
     LayoutComponent,
-    LeftColumnComponent,
+    // LeftColumnComponent,
     MiddleColumnComponent,
-    RightColumnComponent
+    RightColumnComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, LeftColumnModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
