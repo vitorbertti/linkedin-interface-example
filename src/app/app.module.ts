@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LeftColumnModule } from './left-column/left-column.module';
 import { MiddleColumnModule } from './middle-column/middle-column.module';
-import { MiddleColumnComponent } from './middle-column/middle-column.component';
-import { RightColumnComponent } from './right-column/right-column.component';
+import { RightColumnModule } from './right-column/right-column.module';
 
 @NgModule({
-  declarations: [AppComponent, LayoutComponent, RightColumnComponent],
-  imports: [BrowserModule, LeftColumnModule, MiddleColumnModule],
+  declarations: [AppComponent, LayoutComponent],
+  imports: [
+    BrowserModule,
+    LeftColumnModule,
+    MiddleColumnModule,
+    RightColumnModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
