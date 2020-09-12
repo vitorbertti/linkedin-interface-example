@@ -1,0 +1,7 @@
+.container {
+  width: 312px;
+}
+
+.container > div + div {
+  margin-top: 8px;
+}
