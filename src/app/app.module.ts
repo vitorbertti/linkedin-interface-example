@@ -6,9 +6,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { LeftColumnModule } from './left-column/left-column.module';
 import { MiddleColumnModule } from './middle-column/middle-column.module';
 import { RightColumnModule } from './right-column/right-column.module';
+import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 
 @NgModule({
-  declarations: [AppComponent, LayoutComponent],
+  declarations: [AppComponent, LayoutComponent, MobileHeaderComponent],
   imports: [
     BrowserModule,
     LeftColumnModule,
