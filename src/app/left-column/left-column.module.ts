@@ -6,8 +6,12 @@ import { LeftColumnComponent } from './left-column.component';
 import { HashtagPanelComponent } from './hashtag-panel/hashtag-panel.component';
 
 @NgModule({
-  declarations: [ProfilePanelComponent, LeftColumnComponent, HashtagPanelComponent],
+  declarations: [
+    ProfilePanelComponent,
+    LeftColumnComponent,
+    HashtagPanelComponent,
+  ],
   imports: [CommonModule],
-  exports: [LeftColumnComponent],
+  exports: [LeftColumnComponent, LeftColumnComponent],
 })
 export class LeftColumnModule {}

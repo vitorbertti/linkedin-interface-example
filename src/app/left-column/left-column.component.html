@@ -1,4 +1,7 @@
 <div class="container">
-  <app-profile-panel></app-profile-panel>
-  <app-hashtag-panel></app-hashtag-panel>
+  <div *ngIf="isLoading"></div>
+  <div *ngIf="!isLoading">
+    <app-profile-panel></app-profile-panel>
+    <app-hashtag-panel></app-hashtag-panel>
+  </div>
 </div>
