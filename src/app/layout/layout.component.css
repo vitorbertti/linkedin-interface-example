@@ -3,8 +3,14 @@
   height: 100%;
 }
 
+.container > span {
+  margin-top: 48px;
+  display: flex;
+}
+
 .left-column,
-.right-column {
+.right-column,
+.ad-banner {
   display: none;
 }
 
@@ -15,8 +21,14 @@
     justify-content: center;
   }
 
+  .container > span {
+    margin-top: 52px;
+    padding: 8px 0;
+  }
+
   .left-column,
-  .right-column {
+  .right-column,
+  .ad-banner {
     display: unset;
   }
 
