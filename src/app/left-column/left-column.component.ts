@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-left-column',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-column.component.css'],
 })
 export class LeftColumnComponent implements OnInit {
-  constructor(private isLoading: boolean) {}
+  constructor() {}
+
+  @Input() isLoading: boolean;
 
   ngOnInit(): void {}
 }

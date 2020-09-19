@@ -36,3 +36,7 @@ input {
   --color-separator: rgba(0, 0, 0, 0.15);
   --color-white: #fff;
 }
+
+.skeleton {
+  background: #808080;
+}

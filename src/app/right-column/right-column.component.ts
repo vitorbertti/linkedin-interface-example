@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-right-column',
   templateUrl: './right-column.component.html',
-  styleUrls: ['./right-column.component.css']
+  styleUrls: ['./right-column.component.css'],
 })
 export class RightColumnComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  @Input() isLoading: boolean;
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
