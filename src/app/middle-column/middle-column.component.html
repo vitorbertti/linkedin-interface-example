@@ -1,3 +1,15 @@
 <div class="container">
-  <app-feed-post></app-feed-post>
+  <div *ngIf="isLoading">
+    <app-loading-feed-post></app-loading-feed-post>
+    <app-loading-feed-post></app-loading-feed-post>
+    <app-loading-feed-post></app-loading-feed-post>
+    <app-loading-feed-post></app-loading-feed-post>
+  </div>
+  <div *ngIf="!isLoading">
+    <app-feed-share></app-feed-share>
+    <app-feed-post></app-feed-post>
+    <app-feed-post></app-feed-post>
+    <app-feed-post></app-feed-post>
+    <app-feed-post></app-feed-post>
+  </div>
 </div>
