@@ -11,9 +11,10 @@ import { DesktopHeaderComponent } from './desktop-header/desktop-header.componen
 import { AdBannerComponent } from './ad-banner/ad-banner.component';
 import { LoadingProfilePanelComponent } from './shimmer/loading-profile-panel/loading-profile-panel.component';
 import { LoadingFeedPostComponent } from './shimmer/loading-feed-post/loading-feed-post.component';
+import { LoadingFeedShareComponent } from './shimmer/loading-feed-share/loading-feed-share.component';
 
 @NgModule({
-  declarations: [AppComponent, LayoutComponent, MobileHeaderComponent, DesktopHeaderComponent, AdBannerComponent, LoadingProfilePanelComponent, LoadingFeedPostComponent],
+  declarations: [AppComponent, LayoutComponent, MobileHeaderComponent, DesktopHeaderComponent, AdBannerComponent, LoadingProfilePanelComponent, LoadingFeedPostComponent, LoadingFeedShareComponent],
   imports: [
     BrowserModule,
     LeftColumnModule,
