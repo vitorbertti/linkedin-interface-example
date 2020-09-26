@@ -1,7 +1,7 @@
 <div class="container">
   <app-mobile-header></app-mobile-header>
   <app-desktop-header></app-desktop-header>
-  <span>
+  <span *ngIf="!isLoading">
     <app-ad-banner></app-ad-banner>
   </span>
 
