@@ -1,4 +1,9 @@
 <div class="container right-column">
-  <app-trending-panel></app-trending-panel>
-  <app-trending-panel></app-trending-panel>
+  <div *ngIf="isLoading">
+    <app-loading-trending-panel></app-loading-trending-panel>
+  </div>
+  <div *ngIf="!isLoading">
+    <app-trending-panel></app-trending-panel>
+    <app-trending-panel></app-trending-panel>
+  </div>
 </div>
